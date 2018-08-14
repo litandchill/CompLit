@@ -2,35 +2,43 @@ body, html {
   background-image: url("https://images.pexels.com/photos/159667/book-read-book-picture-book-read-159667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   /* -webkit-filter: grayscale(50%); */
   height: 100%;
-
   margin-left: -5px;
   margin-right: -5px;
-
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
 }
 
 #title {
   text-align: center;
   margin: auto;
   padding-top: 8vw;
-  color: white;
+  padding-bottom: 32vw;
+  /* position: fixed; */
+  /* color: white; */
   /* mix-blend-mode: difference; */
   font-size: 5em;
   color: rgba(0,0,0,0.6);
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+  /* background-color: rgba(200,100,0,.5); // Tint color
+    background-blend-mode: multiply; */
+}
+
+topnav {
+    background-color: #333;
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   margin-left: 20px;
     float: left;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
-    padding: 18px 20px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -51,13 +59,23 @@ body, html {
 
 .mission {
   margin-left: 40px;
+  /* color: white; */
+  /* position: fixed; */
 
 }
 #missiontitle {
-  padding-top: 32vw;
+  /* padding-top: .4vw; */
   font-size: 3.5vw;
 }
 
 #missioncontent {
   padding-bottom: 10vw;
+}
+
+#wrapper {
+  /* margin-left: -5px;
+  margin-right: -5px; */
+  /* width: 960px; */
+  /* width: 100%; */
+
 }
