@@ -1,25 +1,32 @@
 body, html {
-  background-image: url("https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  -webkit-filter: grayscale(60%);
-  height: 100%;
+  background-image: url("https://images.pexels.com/photos/34592/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* -webkit-filter: grayscale(100%); */
+  /* height: 100%; */
+  margin-left: -13px;
+  margin-right: -13px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150vw;
 }
- #title {
+
+#title {
   text-align: center;
   margin: auto;
   max-width: 960px;
   padding-top: 40vw;
   color: white;
+  /* mix-blend-mode: difference; */
   font-size: 8em;
 }
- topnav {
+
+topnav {
     background-color: #333;
     overflow: hidden;
 }
- /* Style the links inside the navigation bar */
+
+/* Style the links inside the navigation bar */
 .topnav a {
+  margin-left: 20px;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -27,28 +34,28 @@ body, html {
     text-decoration: none;
     font-size: 17px;
 }
- h1 {
-  color: pink ; font-size:40px;
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
- h2 {
-  color: teal ; font-size: 28;
+
 /* Add a color to the active/current link */
 .topnav a.active {
-    /* background-color: #4CAF50; */
+    background-color: #4CAF50;
     color: white;
 }
- body {
-  background-color : black
+
 #center {
   background-color: #fff5e6;
   padding-bottom: 40px;
 }
-   /*background-image: url("https://lh3.googleusercontent.com/VQYXAF_Ff2ELVVkbLAce97FvzCQslOXzPuD4hGpc5RBTScOtElfocCeEz8oaKdt6jvsum-gZ1s13LowK0eUPDA2KNBggSIGq6aTiuxMG_PKtEW1LnAALgKSH1zqEu-45gp0MBjErBHj_VMcpR8Ypyh0Gg-ft0d_33s4NmsVSZvB5gDMPOrQchon0Y0dyPVuXGN0rf6iLIN1QkJbWCURTXV69yU_he_inmY0nqmOggNkSzQTf9uWoMY_Ul-t1nqO_qJV7Jg-UHc_bkY1hjImjjqcjr2C77KoJzJYFZebsQfoFsFiDCslKUq_4TIaC942bCpCm9MHRQpqgqH0DOZteqtR2BO_0ubBDINfllKIpJrEbj8jd2LLP7_nLXnLPXiJe-zERRz0IyElRSrI7t3TD00g34CnOjT8IIoan4NgByHu_LQE8zHg8K6kxq3JcoRQWBNg-G8c8aoakMQkyGhlgHhTP3WNnCXK_VjQm7EiMaUecb_tY2Jg2bTFqS-UBtbKa_JAqgau2Hpeg7Eru2JHqnK_XVRuv_cSMSU3agC9L66csXWdPTpUD7ebe4kilsIt6b6sHKyX5mxeMWkQ4G1H6qkVlo7-sQ1zvv3cddX8=w693-h923-no");
-  background-repeat: no-repeat;*/
+
+.mission {
+  margin-left: 40px;
+
+}
 #missiontitle {
-  padding-top: 30vw;
+  padding-top: 60vw;
 }
