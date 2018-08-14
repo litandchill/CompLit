@@ -19,26 +19,45 @@ body, html {
   font-size: 8em;
 }
 
-topnav {
+.topnav-fixed-top {
+    list-style-type: none;
     background-color: #333;
     overflow: hidden;
+    overflow: auto;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: block;
+    float: left;
+
+
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  margin-left: 20px;
+.topnav-fixed-top a {
+    margin-left: 20px;
+    display: block;
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    display:inline;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
+    float: left;
+    display: block;
     color: black;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline;
+
 }
 
 /* Add a color to the active/current link */
