@@ -1,4 +1,7 @@
 /* stylesheet for entire website */
+title {
+  color: black;
+}
 h1 {
   color: pink ; font-size:40px;
 }
