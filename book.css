@@ -40,3 +40,22 @@ topnav {
     background-color: #ddd;
     color: black;
 }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#center {
+  background-color: #fff5e6;
+  padding-bottom: 40px;
+}
+
+.mission {
+  margin-left: 40px;
+
+}
+#missiontitle {
+  padding-top: 30vw;
+}
