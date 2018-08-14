@@ -2,8 +2,8 @@ body, html {
   background-image: url("https://images.pexels.com/photos/34592/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   /* -webkit-filter: grayscale(100%); */
   height: 100%;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-left: -13px;
+  margin-right: -13px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150vw;
