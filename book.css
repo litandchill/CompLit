@@ -1,62 +1,49 @@
 body, html {
-  background-image: url("https://images.pexels.com/photos/34592/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  /* -webkit-filter: grayscale(100%); */
+  background-image: url("https://images.pexels.com/photos/159667/book-read-book-picture-book-read-159667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* -webkit-filter: grayscale(50%); */
   height: 100%;
-  margin-left: -13px;
-  margin-right: -13px;
+  margin-left: -5px;
+  margin-right: -5px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 150vw;
+  background-size: 100vw;
 }
 
 #title {
   text-align: center;
   margin: auto;
-  max-width: 960px;
-  padding-top: 40vw;
+  padding-top: 8vw;
   color: white;
   /* mix-blend-mode: difference; */
-  font-size: 8em;
+  font-size: 5em;
+  color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 
-.topnav-fixed-top {
-    list-style-type: none; */
+topnav {
     background-color: #333;
     overflow: hidden;
-    overflow: auto;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    display: block;
-    float: left;
-
-
 }
 
 /* Style the links inside the navigation bar */
-.topnav-fixed-top a {
-    margin-left: 20px;
-    display: block;
+.topnav a {
+  margin-left: 20px;
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    /* display:inline; */
 }
 
 /* Change the color of links on hover */
-.topnav-fixed-top a:hover {
-    background-color: grey;
-    float: left;
-    color: white;
-
-
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav-fixed-top a.active {
+.topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
@@ -71,5 +58,10 @@ body, html {
 
 }
 #missiontitle {
-  padding-top: 30vw;
+  padding-top: 32vw;
+  font-size: 3.5vw;
+}
+
+#missioncontent {
+  padding-bottom: 10vw;
 }
