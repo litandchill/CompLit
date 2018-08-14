@@ -1,32 +1,26 @@
+
 body, html {
-  background-image: url("https://images.pexels.com/photos/34592/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  /* -webkit-filter: grayscale(100%); */
-  /* height: 100%; */
-  margin-left: -13px;
-  margin-right: -13px;
+  background-image: url("https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  -webkit-filter: grayscale(60%);
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 150vw;
+  background-size: cover;
 }
-
-#title {
+ #title {
   text-align: center;
   margin: auto;
   max-width: 960px;
   padding-top: 40vw;
   color: white;
-  /* mix-blend-mode: difference; */
   font-size: 8em;
 }
-
-topnav {
+ topnav {
     background-color: #333;
     overflow: hidden;
 }
-
-/* Style the links inside the navigation bar */
+ /* Style the links inside the navigation bar */
 .topnav a {
-  margin-left: 20px;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -34,28 +28,27 @@ topnav {
     text-decoration: none;
     font-size: 17px;
 }
-
+ h1 {
+  color: pink ; font-size:40px;
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-
+ h2 {
+  color: teal ; font-size: 28;
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
     color: white;
 }
-
+ body {
+  background-color : black
 #center {
   background-color: #fff5e6;
   padding-bottom: 40px;
 }
 
-.mission {
-  margin-left: 40px;
-
-}
 #missiontitle {
-  padding-top: 60vw;
+  padding-top: 30vw;
 }
