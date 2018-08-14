@@ -20,9 +20,8 @@ body, html {
 }
 
 .topnav-fixed-top {
-    list-style-type: none; */
-    background-color: #333;
-    overflow: hidden;
+    list-style-type: none;
+    background-color: none;
     overflow: auto;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -38,12 +37,12 @@ body, html {
     margin-left: 20px;
     display: block;
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 20px;
     text-decoration: none;
     font-size: 17px;
-    /* display:inline; */
+    display:inline;
 }
 
 /* Change the color of links on hover */
