@@ -1,1 +1,15 @@
 
+h1 {
+  color: pink ; font-size:40px;
+}
+
+h2 {
+  color: teal ; font-size: 28;
+}
+
+body {
+  background-color : black
+
+  /*background-image: url("https://lh3.googleusercontent.com/VQYXAF_Ff2ELVVkbLAce97FvzCQslOXzPuD4hGpc5RBTScOtElfocCeEz8oaKdt6jvsum-gZ1s13LowK0eUPDA2KNBggSIGq6aTiuxMG_PKtEW1LnAALgKSH1zqEu-45gp0MBjErBHj_VMcpR8Ypyh0Gg-ft0d_33s4NmsVSZvB5gDMPOrQchon0Y0dyPVuXGN0rf6iLIN1QkJbWCURTXV69yU_he_inmY0nqmOggNkSzQTf9uWoMY_Ul-t1nqO_qJV7Jg-UHc_bkY1hjImjjqcjr2C77KoJzJYFZebsQfoFsFiDCslKUq_4TIaC942bCpCm9MHRQpqgqH0DOZteqtR2BO_0ubBDINfllKIpJrEbj8jd2LLP7_nLXnLPXiJe-zERRz0IyElRSrI7t3TD00g34CnOjT8IIoan4NgByHu_LQE8zHg8K6kxq3JcoRQWBNg-G8c8aoakMQkyGhlgHhTP3WNnCXK_VjQm7EiMaUecb_tY2Jg2bTFqS-UBtbKa_JAqgau2Hpeg7Eru2JHqnK_XVRuv_cSMSU3agC9L66csXWdPTpUD7ebe4kilsIt6b6sHKyX5mxeMWkQ4G1H6qkVlo7-sQ1zvv3cddX8=w693-h923-no");
+  background-repeat: no-repeat;*/
+}
