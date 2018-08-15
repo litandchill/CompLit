@@ -17,8 +17,8 @@ body, html {
 #title {
   text-align: center;
   /* background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) ); */
-  /* background-image:*/
-    /* url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+  background-image:
+    url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) );
   background-position: center;
   background-repeat: no-repeat;
