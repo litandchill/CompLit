@@ -1,19 +1,30 @@
 body, html {
-  background-image: url("https://images.pexels.com/photos/159667/book-read-book-picture-book-read-159667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background: linear-gradient( rgba(0, 0, 0, 5), rgba(0, 0, 0, 10) );
+  background-image: url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
   /* -webkit-filter: grayscale(50%); */
-  height: 100%;
-  margin-left: -5px;
-  margin-right: -5px;
-  background-position: center;
+  /* height: 100%; */
+  margin-left: -.5vw;
+  margin-right: -2vw;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  /* background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9) ); */
+
 }
 
 #title {
   text-align: center;
+  /* background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) ); */
+  background-image:
+    url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   margin: auto;
-  padding-top: 8vw;
-  padding-bottom: 32vw;
+  padding-top: 7vw;
+  padding-bottom: 40vw;
   /* position: fixed; */
   /* color: white; */
   /* mix-blend-mode: difference; */
@@ -29,14 +40,8 @@ topnav {
     overflow: hidden;
 }
 
-/*format text*/
-div, p {
-  background color: white;
-  margin-left: 15px;
-}
-
 /* Style the links inside the navigation bar */
-.topnav-fixed-top a {
+.topnav a {
   margin-left: 20px;
     float: left;
     color: #f2f2f2;
@@ -47,13 +52,13 @@ div, p {
 }
 
 /* Change the color of links on hover */
-.topnav-fixed-top a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav-fixed-top a.active {
+.topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
@@ -64,18 +69,23 @@ div, p {
 }
 
 .mission {
-  margin-left: 40px;
-  /* color: white; */
+  /* margin-left: 5vw; */
+  /* float: right; */
+  color: white;
   /* position: fixed; */
+  margin-left: 68vw;
+  margin-right: 5vw;
 
 }
 #missiontitle {
   /* padding-top: .4vw; */
   font-size: 3.5vw;
+  /* padding-bottom: 0vw; */
 }
 
 #missioncontent {
-  padding-bottom: 10vw;
+  /* padding-bottom: 10vw; */
+  /* margin-top: 0px; */
 }
 
 #wrapper {
@@ -84,4 +94,8 @@ div, p {
   /* width: 960px; */
   /* width: 100%; */
 
+}
+
+h4, html {
+  margin-bottom: -3px;
 }
