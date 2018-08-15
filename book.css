@@ -22,8 +22,14 @@ body, html {
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 
+/*format text*/
+div, p {
+  background color: white;
+  margin-left: 15px;
+}
+
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav-fixed-top a {
   margin-left: 20px;
     float: left;
     color: white;
@@ -34,13 +40,13 @@ body, html {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav-fixed-top a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav-fixed-top a.active {
     background-color: #4CAF50;
     color: white;
 }
