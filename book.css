@@ -114,7 +114,7 @@ h4, html {
 }
 .cb-slideshow:after {
     content: '';
-    background: transparent url(https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) repeat top left;
+    background: transparent url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") repeat top left;
 }
 
 .cb-slideshow li span {
