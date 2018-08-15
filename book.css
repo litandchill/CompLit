@@ -1,96 +1,71 @@
 body, html {
-
-  /* background: linear-gradient( rgba(0, 0, 0, 5), rgba(0, 0, 0, 10) );
-  background-image: url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
-
-  /* -webkit-filter: grayscale(50%); */
-  /* height: 100%; */
-  margin-left: -.5vw;
-  margin-right: -2vw;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9) ); */
-
+  /* margin-left: -.5vw; */
+  /* margin-right: -2vw; */
+  margin-top: -5vw;
 }
 
 #title {
   text-align: center;
-  /* background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) ); */
-  background-image:
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),
     url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100%
   margin: auto;
-  padding-top: 8vw;
-  padding-bottom: 40vw;
-  /* position: fixed; */
-  /* color: white; */
-  /* mix-blend-mode: difference; */
+  padding-top: 20vw;
+  padding-bottom: 25vw;
+  padding-left: 9vw;
+  margin-left: -3vw;
   font-size: 5em;
-  color: rgba(0,0,0,0.6);
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-  /* background-color: rgba(200,100,0,.5); // Tint color
-    background-blend-mode: multiply; */
-}
-
-div {
-  background: grey;
   color: white;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+  font-family: 'Lekton', sans-serif;
+  }
 
-  margin-left: 15px;
+topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.topnav-fixed-top {
+.topnav {
   list-style-type: none;
   background-color: none;
   overflow: auto;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: block;
   float: left;
 }
 
-/* Style the links inside the navigation bar */
-.topnav-fixed-top a {
+.topnav a {
+  margin-left: 20px;
   float: left;
   display: block;
   color: white;
   text-align: center;
-  padding: 18px 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: inline;
 }
 
-/* Change the color of links on hover */
-.topnav-fixed-top a:hover {
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
     background-color: black;
     color: white;
 }
 
-/* Add a color to the active/current link */
-.active {
-    background-color: black;
-    color: white;
+.topnav .icon {
+  display: none;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav-fixed-top .icon {
-    display: none;
-}
-
-/* Main content */
-.main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav-fixed-top a:not(:first-child) {display: none;}
   .topnav-fixed-top a.icon {
@@ -99,7 +74,6 @@ div {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav-fixed-top.responsive {position: relative;}
   .topnav-fixed-top.responsive a.icon {
@@ -108,12 +82,11 @@ div {
     top: 0;
   }
 
-  .topnav-fixed-top.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
+.topnav-fixed-top.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 
 #center {
   background-color: #fff5e6;
@@ -121,153 +94,20 @@ div {
 }
 
 .mission {
-  /* margin-left: 5vw; */
-  /* float: right; */
-  color: white;
-  /* position: fixed; */
   margin-left: 68vw;
-  margin-right: 5vw;
-
+  margin-right: 30vw;
 }
+
 #missiontitle {
-  /* padding-top: .4vw; */
-  font-size: 3.5vw;
-  /* padding-bottom: 0vw; */
+  font-size: 4vw;
 }
-
-#missioncontent {
-  /* padding-bottom: 10vw; */
-  /* margin-top: 0px; */
-}
-
-#wrapper {
-  /* margin-left: -5px;
-  margin-right: -5px; */
-  /* width: 960px; */
-  /* width: 100%; */
-
-}
-
-
 
 h4, html {
   margin-bottom: -3px;
 }
 
-/*  */
-.cb-slideshow,
-.cb-slideshow: after {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-}
-.cb-slideshow:after {
-    content: '';
-    background: transparent url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") repeat top left;
-}
-
-.cb-slideshow li span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 36s linear infinite 0s;
-}
-
-.cb-slideshow li div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 36s linear infinite 0s;
-}
-.cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
-    padding: 0;
-    line-height: 200px;
-}
-
-.cb-slideshow li:nth-child(1) span {
-    background-image: url("https://images.pexels.com/photos/267684/pexels-photo-267684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    animation-delay: 6s;
-}
-.cb-slideshow li:nth-child(2) span {
-    background-image: url("https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-.cb-slideshow li:nth-child(3) span {
-    background-image: url("https://images.pexels.com/photos/373465/pexels-photo-373465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-
-.cb-slideshow li:nth-child(4) span {
-    background-image: url("https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-
-.cb-slideshow li:nth-child(5) span {
-    background-image: url("https://images.pexels.com/photos/698158/pexels-photo-698158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-.cb-slideshow li:nth-child(6) span {
-    background-image: url("https://images.pexels.com/photos/169915/pexels-photo-169915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 30s; */
-}
-
-.cb-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
-}
-.cb-slideshow li:nth-child(3) div {
-    animation-delay: 12s;
-}
-.cb-slideshow li:nth-child(4) div {
-    animation-delay: 18s;
-}
-.cb-slideshow li:nth-child(5) div {
-    animation-delay: 24s;
-}
-.cb-slideshow li:nth-child(6) div {
-    animation-delay: 30s;
-}
-
-@keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-@keyframes titleAnimation {
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-.no-cssanimations .cb-slideshow li span{
-	opacity: 1;
-}
-
-@media screen and (max-width: 1140px) {
-    .cb-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) {
-    .cb-slideshow li div h3 { font-size: 80px }
-}
+/* div {
+  background: grey;
+  color: white;
+  margin-left: 15px;
+} */
