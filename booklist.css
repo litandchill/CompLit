@@ -50,6 +50,7 @@ topnav {
   text-decoration: none;
   font-size: 20px;
   display: inline;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .topnav a:hover {
