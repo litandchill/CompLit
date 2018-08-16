@@ -79,16 +79,26 @@ topnav {
 }
 
 .mission {
-  margin-left: 68vw;
-  margin-right: 30vw;
+  margin-left: 60px;
+  margin-right: 70vw;
 }
 
 #missiontitle {
   font-size: 4vw;
+  margin-bottom: -3px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#missioncontent {
+  padding-bottom: 50px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 h4, html {
-  margin-bottom: -3px;
+/*   margin-bottom: -3px; */
 }
 
 /* div {
