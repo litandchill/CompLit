@@ -50,6 +50,7 @@ topnav {
   text-decoration: none;
   font-size: 20px;
   display: inline;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .topnav a:hover {
@@ -65,22 +66,6 @@ topnav {
 .topnav .icon {
   display: none;
 }
-
-@media screen and (max-width: 600px) {
-  .topnav-fixed-top a:not(:first-child) {display: none;}
-  .topnav-fixed-top a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav-fixed-top.responsive {position: relative;}
-  .topnav-fixed-top.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 
 .topnav-fixed-top.responsive a {
   float: none;
