@@ -204,29 +204,7 @@ h4, html {
 
 .cb-slideshow li:nth-child(1) span {
     background-image: url("https://images.pexels.com/photos/267684/pexels-photo-267684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    animation-delay: 6s;
-}
-.cb-slideshow li:nth-child(2) span {
-    background-image: url("https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-.cb-slideshow li:nth-child(3) span {
-    background-image: url("https://images.pexels.com/photos/373465/pexels-photo-373465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-
-.cb-slideshow li:nth-child(4) span {
-    background-image: url("https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-
-.cb-slideshow li:nth-child(5) span {
-    background-image: url("https://images.pexels.com/photos/698158/pexels-photo-698158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 6s; */
-}
-.cb-slideshow li:nth-child(6) span {
-    background-image: url("https://images.pexels.com/photos/169915/pexels-photo-169915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    /* animation-delay: 30s; */
+/
 }
 
 .cb-slideshow li:nth-child(2) div {
