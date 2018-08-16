@@ -1,1 +1,108 @@
+body, html {
+  /* margin-left: -.5vw; */
+  /* margin-right: -2vw; */
+  margin-top: -5vw;
+}
 
+#title {
+  text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),
+    url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%
+  margin: auto;
+  padding-top: 20vw;
+  padding-bottom: 25vw;
+  padding-left: 9vw;
+  margin-left: -3vw;
+  font-size: 5em;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+  font-family: 'Lekton', sans-serif;
+  }
+
+topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav {
+  list-style-type: none;
+  background-color: none;
+  overflow: auto;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.topnav a {
+  margin-left: 20px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav-fixed-top.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+#center {
+  background-color: #fff5e6;
+  padding-bottom: 40px;
+}
+
+.mission {
+  margin-left: 60px;
+  margin-right: 70vw;
+}
+
+#missiontitle {
+  font-size: 4vw;
+  margin-bottom: -3px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#missioncontent {
+  padding-bottom: 50px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+h4, html {
+/*   margin-bottom: -3px; */
+}
+
+/* div {
+  background: grey;
+  color: white;
+  margin-left: 15px;
+} */
