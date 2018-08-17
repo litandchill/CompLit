@@ -141,8 +141,14 @@ hr {
 }
 
 
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+}
+
 #myVideo {
   padding-top: -10px;;
   float: right;
   margin-right: -400px;
+
 }

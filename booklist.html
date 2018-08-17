@@ -2,6 +2,14 @@
 <html>
 <head>
   <title>Booklists</title>
+  <meta charset="UTF-8">
+    <title>Your Personal Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
   <link rel="stylesheet" href="booklist.css">
 </head>
 <body>
@@ -14,8 +22,36 @@
     </div>
   <div id="wrapper">
   <h1 id="title">Lists</h1>
-  <h4 class="lists" id="liststitle">Book Lists</h4>
-  <p class="lists" id="liss content"><em>insert API</em></p>
-</div>
+
+  </div>
+
+
+<div align="left">
+
+
+    <div class="login">
+        <h1>Library Search</h1>
+        <form id="myform">
+        <input type="search" id="books" placeholder="Type the book name" required="required" />
+
+        <button class="btn btn-primary btn-block btn-large">Go</button>
+        </form>
+    </div>
+
+    <div id="result">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="bookSearch.js"></script>
+
+    <!--<script src="scripts/googlebooks.js"></script>-->
+    <script src='https://use.edgefonts.net/amaranth.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+
+
+    <br><br><br><br><br><br><br><br>
 </body>
 </html>
