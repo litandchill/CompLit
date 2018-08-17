@@ -197,3 +197,7 @@ h4, html {
     .cb-slideshow li div h3 { font-size: 80px }
 } */
 
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+}
