@@ -1,6 +1,6 @@
 body, html {
-  /* margin-left: -.5vw; */
-  /* margin-right: -2vw; */
+  margin-left: -.5vw;
+  margin-right: -2vw;
   margin-top: -5vw;
 }
 
@@ -11,12 +11,13 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%
+  height: 100%;
   margin: auto;
   padding-top: 20vw;
-  padding-bottom: 25vw;
+  padding-bottom: 28vw;
   padding-left: 9vw;
   margin-left: -3vw;
+  margin-right: -15px;
   font-size: 5em;
   color: white;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
@@ -47,6 +48,7 @@ topnav {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  padding-top: 40px;
   text-decoration: none;
   font-size: 20px;
   display: inline;
@@ -79,121 +81,68 @@ topnav {
 }
 
 .mission {
-  margin-left: 60px;
-  margin-right: 70vw;
+  /* margin-left: 20px; */
+  color: white;
+  padding-left: 20px;
+  /* margin-right: 70vw; */
 }
 
 #missiontitle {
   font-size: 4vw;
   margin-bottom: -3px;
   font-family: 'Source Code Pro', monospace;
+  margin-top: -20px;
 }
 
 #missioncontent {
-  padding-bottom: 50px;
-  letter-spacing: 1px;
-  line-height: 150%;
+  padding-bottom: 1px;
+  letter-spacing: 2px;
+  line-height: 170%;
   font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 
 }
 
-h4, html {
-/*   margin-bottom: -3px; */
+{box-sizing: border-box;}
+
+.column {
+    float: left;
+    /* padding: 10px;
+    height: 300px; */
+}
+
+.left {
+  width: 35%;
+  background-color: #29226D;
+  padding-bottom: 91px;
+  padding-top: 100px;
+  padding-right: 40px;
+}
+
+.right {
+  width: 75%;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+hr {
+  /* border : 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+
+  border: 0;
+  border-top: 15px double black;
+
 }
 
 
-.cb-slideshow,
-.cb-slideshow: after {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
+#myVideo {
+  padding-top: -10px;;
+  float: right;
+  margin-right: -400px;
 }
-.cb-slideshow:after {
-    content: '';
-    background: transparent url("https://images.pexels.com/photos/771315/pexels-photo-771315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") repeat top left;
-}
-
-.cb-slideshow li span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 36s linear infinite 0s;
-}
-
-.cb-slideshow li div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 36s linear infinite 0s;
-}
-.cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
-    padding: 0;
-    line-height: 200px;
-}
-
-.cb-slideshow li:nth-child(1) span {
-    background-image: url("https://images.pexels.com/photos/267684/pexels-photo-267684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-/
-}
-
-.cb-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
-}
-.cb-slideshow li:nth-child(3) div {
-    animation-delay: 12s;
-}
-.cb-slideshow li:nth-child(4) div {
-    animation-delay: 18s;
-}
-.cb-slideshow li:nth-child(5) div {
-    animation-delay: 24s;
-}
-.cb-slideshow li:nth-child(6) div {
-    animation-delay: 30s;
-}
-
-@keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-@keyframes titleAnimation {
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-.no-cssanimations .cb-slideshow li span{
-	opacity: 1;
-}
-
-@media screen and (max-width: 1140px) {
-    .cb-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) {
-    .cb-slideshow li div h3 { font-size: 80px }
-} */
-
