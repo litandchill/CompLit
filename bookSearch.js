@@ -12,10 +12,20 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 // }
 
 
+
     $(document).ready(function(){
+
+
+
     $("#myform").submit(function(e){
-      e.preventDefault()
+      e.preventDefault();
+
+
+
     var search = $("#books").val();
+
+
+
     if(search=='')
     {
      alert("Please enter something in the field");
@@ -29,9 +39,13 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
         var title='';
         var author='';
 
+
         console.log("Search for "+search);
 
+
         $.get("https://www.googleapis.com/books/v1/volumes?q="+ search + "&key=" + googleBooksKey ,function(response){
+
+          myform.reset();
 
               for(i=0;i<response.items.length;i++){
 
@@ -55,6 +69,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
     }
     });
     return false;
+
     });
 
 
@@ -66,5 +81,10 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
         } else {
           $('#masthead').css({'height':'100', 'padding':'10'});
           $('#nyt-logo').css({'height':'80'})
-        }
+        };
+
+
+      // delete(search); //should delete search variable.  should also clear search results
+      // console.log(search);
+
     });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Your Personal Library</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
@@ -13,32 +13,35 @@
 </head>
 
 <body bgcolor="#232733">
-    <div id="masthead">
+    <title>Your Personal Library</title>
+    <!-- <div id="masthead">
+
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/387928/nyt-logo.png" height="80" id="nyt-logo">
-    </div>
+    </div> -->
 
     <div align="center">
 
 
-    <div class="login">
-        <h1><br>Library Search</h1>
-        <form id="myform">
-        <input type="search" id="books" placeholder="Type the book name" required="required" />
+        <div class="login">
+            <h1><br><br><br><br><br><br>Library Search</h1>
+            <form id="myform">
+            <input type="search" id="books" placeholder="Type the book name" required="required" />
+            <input type="reset" value="Reset" onClick="window.location.reload()">
 
-        <button class="btn btn-primary btn-block btn-large" >Go</button>
-        </form>
-    </div>
+            <button class="btn btn-primary btn-block btn-large" onclick="myFunction()" >Go</button>
+            </form>
+        </div>
 
-    <div id="result"></div>
+        <div id="result"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="config.js"></script>
-    <script src="bookSearch.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="config.js"></script>
+        <script src="bookSearch.js" ></script>
 
-    <!--<script src="scripts/googlebooks.js"></script>-->
-    <script src='https://use.edgefonts.net/amaranth.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <!--<script src="scripts/googlebooks.js"></script>-->
+        <script src='https://use.edgefonts.net/amaranth.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 
 </body>
 </html>
