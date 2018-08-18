@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+
+              /* Style the button that is used to open and close the collapsible content */
+            .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            /* padding: 18px; */
+            width: 200px;
+            height: 300px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+
+
+
+
+
+
+            }
+
+            /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+            .active, .collapsible:hover {
+            background-color: #555;
+            }
+
+            /* Style the collapsible content. Note: hidden by default */
+            .content {
+            position: relative;
+            padding: 5px;
+            max-height: 0;
+            overflow: hidden;
+            overflow: auto;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+
+
+            }
+
+            .collapsible:after {
+            content: '\002B'; /* Unicode character for "plus" sign (+) */
+            color: white;
+            font-size: 13px;
+            float: right;
+            margin-left: 5px;
+
+            }
+
+            .active:after {
+            position: absolute;
+            content: "\2212"; /* Unicode character for "minus" sign (-) */
+            color: white;
+            font-size: 13px;
+            float: right;
+            margin-left: 5px;
+            z-index: -1
+            }
+  </style>
+</head>
+<body>
+
+
+
+  <button class="collapsible">
+    <img src="http://books.google.com/books/content?id=ZVVYDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt="Harry Potter: A History of Magic">
+    <br>Harry Potter - A Journey Through A History of Magic
+  </button>
+
+    <div class="content">
+      <p>British Library</p>
+
+      <p>The official companion book to the British Library exhibition
+and the ultimate gift for Harry Potter fans! As the British Library
+unveils a very special new exhibition in the UK, Harry Potter:
+A History of Magic, readers everywhere are invited on an enchanting
+journey through the Hogwarts curriculum, from Care of Magical
+Creatures and Herbology to Defense Against the Dark Arts,
+Astronomy, and more in this eBook uncovering thousands of years
+of magical history. Prepare to be amazed by artifacts released
+from the archives of the British Library, unseen sketches and
+manuscript pages from J.K. Rowling, and incredible illustrations
+from artist Jim Kay. Discover the truth behind the origins of the
+Philosopher’s Stone, monstrous dragons, and troublesome trolls;
+examine real-life wands and find out what actually makes a mandrake
+scream; pore over remarkable pages from da Vinci’s notebook; and discover
+the oldest atlas of the night sky. Carefully curated by the British
+Library and full of extraordinary treasures from all over the world,
+this is an unforgettable journey exploring the history of the magic
+at the heart of the Harry Potter stories.</p>
+    </div>
+
+
+
+    <button class="collapsible">
+      <img src="http://books.google.com/books/content?id=5iTebBW-w7QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="Harry Potter and the Chamber of Secrets">
+      <br>Harry Potter and the Chamber of Secrets
+    </button>
+
+      <div class="content">
+        <p>J. K. Rowling</p>
+
+        <p>"There is a plot, Harry Potter. A plot to make most terrible things
+          happen at Hogwarts School of Witchcraft and Wizardry this year." Harry
+          Potter's summer has included the worst birthday ever, doomy warnings
+          from a house-elf called Dobby, and rescue from the Dursleys by his friend
+          Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft
+          and Wizardry for his second year, Harry hears strange whispers echo through
+          empty corridors - and then the attacks start. Students are found as though
+          turned to stone... Dobby's sinister predictions seem to be coming true."
+        </p>
+
+      </div>
+
+
+
+  <button class="collapsible">
+    <img src="http://books.google.com/books/content?id=Af5UvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt="Harry Potter and the Philosopher's Stone - Slytherin Edition">
+    <br>Harry Potter - A Journey Through A History of Magic
+  </button>
+
+    <div class="content">
+      <p>J. K. Rowling</p>
+
+      <p>Celebrate 20 years of Harry Potter magic with four special editions of
+        Harry Potter and the Philosopher's Stone. Gryffindor, Slytherin,
+        Hufflepuff, Ravenclaw ... Twenty years ago these magical words and
+        many more flowed from a young writer's pen, an orphan called Harry Potter
+        was freed from the cupboard under the stairs - and a global phenomenon
+        started.Harry Potter and the Philosopher's Stonehas been read and loved
+        by every new generation since. To mark the 20th anniversary of first
+        publication, Bloomsbury is publishing four House Editions of J.K.
+        Rowling's modern classic. These stunning editions will each feature the
+        individual house crest on the jacket and sprayed edges in the house
+        colours. Exciting new extra content will include fact files, profiles of
+        favourite characters and line illustrations exclusive to that house.
+        Available for a limited period only, these highly collectable editions
+        will be a must-have for all Harry Potter fans in 2017.</p>
+
+    </div>
+
+
+  <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+  </script>
+
+</body>
+</html>
