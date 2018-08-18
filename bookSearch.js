@@ -11,6 +11,10 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 //   }
 // }
 
+// function clearBox(result)
+// {
+//     document.getElementById(result).innerHTML = "";
+// };
 
 
     $(document).ready(function(){
@@ -18,6 +22,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 
 
     $("#myform").submit(function(e){
+<<<<<<< HEAD
       e.preventDefault();
 
 
@@ -26,9 +31,16 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 
 
 
+=======
+      e.preventDefault()
+
+    var search = $("#books").val();
+
+>>>>>>> 8f03ed634445e043434a42f1b46a0d38cec91f6a
     if(search=='')
     {
      alert("Please enter something in the field");
+
 
     }
 
@@ -38,28 +50,33 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
         var img='';
         var title='';
         var author='';
+        var review='';
 
 
         console.log("Search for "+search);
 
 
         $.get("https://www.googleapis.com/books/v1/volumes?q="+ search + "&key=" + googleBooksKey ,function(response){
-
-          myform.reset();
-
+            $("#result").empty();
               for(i=0;i<response.items.length;i++){
 
                   title=$('<h5>'+response.items[i].volumeInfo.title + '</h5>');
                   author=$('<h5>'+response.items[i].volumeInfo.authors + '</h5>');
 
-                  img=$('<img><a href=' + response.items[i].volumeInfo.infoLink + "><button display='block'>Read More</button></a>");
+                  img=$('<img><a href=' + response.items[i].volumeInfo.infoLink + "><br><button width='100%' text-align='center' display='block'>Read More</button></a>");
+
                   url=response.items[i].volumeInfo.imageLinks.thumbnail;
+                  review=$('<h5>' + response.items[i].volumeInfo.description + '</h5>');
 
                   img.attr('src',url);
 
                   title.appendTo("#result");
                   author.appendTo("#result");
                   img.appendTo("#result");
+
+                  review.appendTo("#result");
+
+
 
 
               }
@@ -71,6 +88,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
     return false;
 
     });
+<<<<<<< HEAD
 
 
     $(window).scroll(function (event) {
@@ -88,3 +106,5 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
       // console.log(search);
 
     });
+=======
+>>>>>>> 8f03ed634445e043434a42f1b46a0d38cec91f6a
