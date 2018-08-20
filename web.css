@@ -232,13 +232,13 @@
 /* Control the left side */
 .left {
   left: 0;
-  background-color: MidnightBlue;
+  background-color: black;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: PaleTurquoise;
+  background-color: beige;
 }
 h2 {
   font-style: italic;
