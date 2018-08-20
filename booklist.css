@@ -73,8 +73,17 @@ topnav {
   text-align: left;
 }
 
-#searchtitle {
-font-family: 'Source Code Pro', monospace;
-color: white;
+.searchsearch {
+  background-color: black;
+  color: white;
+  font-weight: lighter;
 }
 
+#search {
+  color: white;
+  font-weight: lighter;
+
+}
+
+body, html {
+  background-color: black;
