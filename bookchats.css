@@ -62,7 +62,7 @@ topnav {
 }
 
 .topnav a.active {
-    background-color: black;
+    background-color: none;
     color: white;
 }
 
