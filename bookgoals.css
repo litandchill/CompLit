@@ -76,3 +76,8 @@ topnav {
   display: block;
   text-align: left;
 }
+
+body, html {
+  color: white;
+  background-color: black;
+}
