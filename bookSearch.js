@@ -22,21 +22,14 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 
 
     $("#myform").submit(function(e){
-<<<<<<< HEAD
+
       e.preventDefault();
 
 
 
     var search = $("#books").val();
+      
 
-
-
-=======
-      e.preventDefault()
-
-    var search = $("#books").val();
-
->>>>>>> 8f03ed634445e043434a42f1b46a0d38cec91f6a
     if(search=='')
     {
      alert("Please enter something in the field");
@@ -88,7 +81,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
     return false;
 
     });
-<<<<<<< HEAD
+
 
 
     $(window).scroll(function (event) {
@@ -106,5 +99,3 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
       // console.log(search);
 
     });
-=======
->>>>>>> 8f03ed634445e043434a42f1b46a0d38cec91f6a
