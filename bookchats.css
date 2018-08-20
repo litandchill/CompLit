@@ -73,3 +73,13 @@ topnav {
   display: block;
   text-align: left;
 }
+
+#chatss {
+  background-color: black;
+
+}
+
+body, html {
+  background-color: black;
+  /* text: grey; */
+}
