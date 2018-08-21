@@ -1,9 +1,9 @@
-body, html {
+/* body, html {
   /* margin-left: -.5vw; */
   /* margin-right: -2vw; */
-  margin-top: -5vw;
+/*   margin-top: -5vw;
 }
-
+/* 
 #title {
   text-align: center;
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ),
@@ -24,11 +24,11 @@ body, html {
   font-family: 'Lekton', sans-serif;
   }
 
-topnav {
-  background-color: #333;
-  overflow: hidden;
+topnav { */
+/*   background-color: #333;
+/*   overflow: hidden; */
 }
-
+/*
 .topnav {
   list-style-type: none;
   background-color: none;
@@ -87,4 +87,50 @@ topnav {
 }
 
 body, html {
-  background-color: black;
+  background-color: black; */
+
+.searchsearch {
+  color: white;
+  font-weight: lighter;
+}
+
+#search {
+  color: white;
+  font-weight: lighter;
+  align: left;
+  font-size: 50px;
+  margin-bottom: -14px;
+}
+
+#liststitle {
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.ui-helper-hidden-accessible {
+  align-items: center;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  align-items: center;
+}
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;}
+
+#listsheader {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),
+  url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center /
+cover;
+  text-align: center;
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body, html {
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
