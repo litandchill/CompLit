@@ -64,9 +64,8 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
                   title.appendTo("#result");
                   author.appendTo("#result");
                   img.appendTo("#result");
+                  review.appendTo("#result");
 
-
-                  // review.appendTo("#result");
                   // button = $('button');
                   // button.attr('class', 'collapsible');
                   // img = $('<img src="' + response.items[i].volumeInfo.infoLink + '" alt="' + response.items[i].volumeInfo.title + '">');
