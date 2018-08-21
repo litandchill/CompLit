@@ -28,7 +28,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 
 
     var search = $("#books").val();
-      
+
 
     if(search=='')
     {
@@ -53,29 +53,27 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
         $.get("https://www.googleapis.com/books/v1/volumes?q="+ search + "&key=" + googleBooksKey ,function(response){
             $("#result").empty();
               for(i=0;i<response.items.length;i++){
-
-                  // title=$('<br/>'+response.items[i].volumeInfo.title);
-                  // author=$('<h5>'+response.items[i].volumeInfo.authors + '</h5>');
-                  //
-                  // img=$('<img src="' + response.items[i].volumeInfo.infoLink + '" alt="' + response.items[i].volumeInfo.title + '">');
-                  //
-                  // url=response.items[i].volumeInfo.imageLinks.thumbnail;
-                  // review=$('<p>' + response.items[i].volumeInfo.description + '</p>');
-                  //
-                  // img.attr('src',url);
-                  //
-                  // title.appendTo("#result");
-                  // author.appendTo("#result");
-                  // img.appendTo("#result");
-                  //
-                  // review.appendTo("#result");
-                  button = $('button');
-                  button.attr('class', 'collapsible');
-                  img = $('<img src="' + response.items[i].volumeInfo.infoLink + '" alt="' + response.items[i].volumeInfo.title + '">');
                   title=$('<br/>'+response.items[i].volumeInfo.title);
-                  button.append(img);
-                  button.append(title);
-                  button.appendTo("#result");
+                  author=$('<h5>'+response.items[i].volumeInfo.authors + '</h5>');
+                  img=$('<img src="' + response.items[i].volumeInfo.infoLink + '" alt="' + response.items[i].volumeInfo.title + '">');
+                  url=response.items[i].volumeInfo.imageLinks.thumbnail;
+                  review=$('<p>' + response.items[i].volumeInfo.description + '</p>');
+
+                  img.attr('src',url);
+
+                  title.appendTo("#result");
+                  author.appendTo("#result");
+                  img.appendTo("#result");
+
+
+                  // review.appendTo("#result");
+                  // button = $('button');
+                  // button.attr('class', 'collapsible');
+                  // img = $('<img src="' + response.items[i].volumeInfo.infoLink + '" alt="' + response.items[i].volumeInfo.title + '">');
+                  // title=$('<br/>'+response.items[i].volumeInfo.title);
+                  // button.append(img);
+                  // button.append(title);
+                  // button.appendTo("#result");
               }
 
         });
