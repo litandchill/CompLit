@@ -1,0 +1,18 @@
+#monthlypicksheader {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) ),
+  url("https://images.pexels.com/photos/185764/pexels-photo-185764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center /
+cover;
+  text-align: center;
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#monthlytitle {
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body, html {
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
