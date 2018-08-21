@@ -51,6 +51,6 @@ echo $gender;
 
 ?>
 <br>
-<button href="index.html" type="button">Return Home</button>
+<button href="https://litandchill.github.io/" type="button">Return Home</button>
 </body>
 </html>
