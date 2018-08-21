@@ -145,9 +145,9 @@ a {
 }
 
 .btn {
-  font-size: 1.2em;
-  border-radius: 5px;
-  padding: 12px 30px;
+  font-size: 1em;
+  border-radius: 3px;
+  padding: none;
 }
 
 .block {

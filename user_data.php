@@ -1,6 +1,6 @@
 <html>
 <head>
-  <style>
+  <!-- <style>
   .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -11,7 +11,7 @@
     display: inline-block;
     font-size: 16px;
 }
-  </style>
+  </style> -->
 </head>
 <body>
 <?php
@@ -53,6 +53,9 @@ function test_input($data) {
 
 print_r($_POST);
 
+
+echo "<h5>This is our registration prototype.  If we had time, we planned to
+save the userdata serverside.  We did this by creating a local server.</h5>";
 echo "<h2>Your Input:</h2>";
 echo $email;
 
@@ -65,6 +68,6 @@ echo $gender;
 
 ?>
 <br>
-<a type="button" href="https://litandchill.github.io/" class = ".button" roll="button">Return Home</a>
+<a type="button" href="https://litandchill.github.io/" class = ".btn" roll="button">Return Home</a>
 </body>
 </html>
