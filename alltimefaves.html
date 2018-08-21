@@ -3,19 +3,17 @@
   <head>
     <title>Book Lists</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="lists.css">
-    <script src="lists.js"></script>
+    <link rel="stylesheet" href="alltimefaves.css">
     <meta charset="UTF-8">
     <title>Your Personal Library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower|Lekton|M+PLUS+Rounded+1c|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed|Sawarabi+Mincho" rel="stylesheet">
-
   </head>
 
   <body>
-  <header id="listsheader">
+  <header id="alltimefavesheader">
     <div class="container">
       <div dlass="row">
         <div class="twelve columns">
@@ -32,35 +30,13 @@
 
       <div class="row">
         <div class="twelve columns">
-          <h1 id="liststitle">- Lists -</h1>
+          <h1 id="favestitle">- All Time Favorites -</h1>
         </div>
       </div>
   </div> <!-- end of container -->
 </header>
 
-<div id="wrapper">
-  <div align="left">
-    <div class="searchsearch">
-      <div class="login">
-        <h2 id="search">Library Search</h1>
-        <form id="myform">
-          <input type="search" id="books" placeholder="Type the book name" required="required" />
-          <button class="btn btn-primary btn-block btn-large" onclick = "clearBox()"/>Go</button>
-        </form>
-      </div>
-    <br>  <br>  <br>  <br>  <br>  <br>
-
-    <div id="result"></div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-      <script type="text/javascript" src="config.js"></script>
-      <script src="bookSearch.js"></script>
-      <!--<script src="scripts/googlebooks.js"></script>-->
-      <script src='https://use.edgefonts.net/amaranth.js'></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
-    </div>
-  </div>
-</div>
+<iframe src="alltimefavesslideshow.html" width="100%" height="700px">
 
 </body>
 </html>
