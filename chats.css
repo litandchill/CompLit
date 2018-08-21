@@ -1,0 +1,16 @@
+#chatsheader {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),
+  url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47d2b1f32cc05c976af4a39256e01cba&auto=format&fit=crop&w=1000&q=60") no-repeat fixed center /
+cover;
+  text-align: center;
+}
+
+#chatss {
+  background-color: white;
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower|Lekton|M+PLUS+Rounded+1c|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed|Sawarabi+Mincho" rel="stylesheet">
+}
+
+#chatstitle {
+  font-family: 'Lekton', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
