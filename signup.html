@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8" />
+   <link rel="stylesheet" href="signup.css" />
+   <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <header id="signupheader">
+    <div class="container">
+      <div dlass="row">
+        <div class="twelve columns">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="lists.html">Lists</a></li>
+              <li><a href="chats.html">Chat</a></li>
+              <li><a href="goals.html">Goals</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <h1></h1>
+        </div>
+      </div>
+  </div> <!-- end of container -->
+</header>
+  <div id="main">
+   <h2 id="Register">Register!</h2>
+     <form class="" method="post" action="">
+       <div class="row email">
+         <input type="text" id="email" name="email" placeholder="Email" />
+       </div>
+       <div class="row pass">
+         <input type="password" id="password1" name="password1" placeholder="Password" />
+       </div>
+       <div class="row pass">
+         <input type="password" id="password2" name="password2" placeholder="Password (repeat)" disabled="true" />
+       </div>
+       <!-- The rotating arrow -->
+       <div class="arrowCap"></div>
+        <div class="arrow"></div>
+          <p class="meterText">Password Meter</p>
+            <input type="submit" value="Register" />
+      </form>
+  </div>
+
+       <!-- JavaScript includes - jQuery, the complexify plugin and our own script.js -->
+       <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+       <script src="assets/js/jquery.complexify.js"></script>
+       <script src="signup.js"></script>
+
+</body>
+</html>
