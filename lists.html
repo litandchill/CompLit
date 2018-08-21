@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Booklists</title>
@@ -19,7 +19,7 @@
 <body>
    <div class="topnav">
       <!-- <img src="italianlogo.png" style="width:5%"> -->
-      <a href="index.html" class= "active">Home</a>
+<!--       <a href="index.html" class= "active">Home</a>
       <a href="chat.html">Chat</a>
       <a href="productivity.html">Goals</a>
       <a href="lists.html">Lists</a>
@@ -27,8 +27,8 @@
 <div id="wrapper">
   <h1 id="title">Lists</h1>
 
-  <div align="left">
-
+  <div align="left"> -->
+<!-- 
 <div class="searchsearch">
   <div class="login">
       <h1 id="search">Library Search</h1>
@@ -38,8 +38,8 @@
       <button class="btn btn-primary btn-block btn-large" onclick = "clearBox()"/>Go</button>
       </form>
   </div>
-  <br>  <br>  <br>  <br>  <br>  <br>
-
+  <br>  <br>  <br>  <br>  <br>  <br> -->
+<!-- 
 
 
   <div id="result"></div>
@@ -48,12 +48,79 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="config.js"></script>
   <script src="bookSearch.js"></script>
-
+ -->
   <!--<script src="scripts/googlebooks.js"></script>-->
-  <script src='https://use.edgefonts.net/amaranth.js'></script>
+<!--   <script src='https://use.edgefonts.net/amaranth.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 </div>
   </div>
   </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Lists</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lists.css">
+    <script src="lists.js"></script>
+    <meta charset="UTF-8">
+    <title>Your Personal Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower|Lekton|M+PLUS+Rounded+1c|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed|Sawarabi+Mincho" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <header id="listsheader">
+    <div class="container">
+      <div dlass="row">
+        <div class="twelve columns">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="lists.html">Lists</a></li>
+              <li><a href="chats.html">Chat</a></li>
+              <li><a href="goals.html">Goals</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <h1 id="liststitle">- Lists -</h1>
+        </div>
+      </div>
+  </div> <!-- end of container -->
+</header>
+
+<div id="wrapper">
+  <div align="left">
+    <div class="searchsearch">
+      <div class="login">
+        <h2 id="search">Library Search</h1>
+        <form id="myform">
+          <input type="search" id="books" placeholder="Type the book name" required="required" />
+          <button class="btn btn-primary btn-block btn-large" onclick = "clearBox()"/>Go</button>
+        </form>
+      </div>
+    <br>  <br>  <br>  <br>  <br>  <br>
+
+    <div id="result"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript" src="config.js"></script>
+      <script src="bookSearch.js"></script>
+      <!--<script src="scripts/googlebooks.js"></script>-->
+      <script src='https://use.edgefonts.net/amaranth.js'></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
