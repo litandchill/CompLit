@@ -42,7 +42,7 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
+  background-color: yellow;
   border: 4px solid Darkblue;
   top: 15px;
   border-radius: 50%;
@@ -68,7 +68,7 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid yellow;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
@@ -95,7 +95,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: Tan;
   position: relative;
   border-radius: 6px;
 }
@@ -130,5 +130,8 @@ body {
 /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+.link {
+   font-color: yellow;
   }
 }
