@@ -1,4 +1,18 @@
 <html>
+<head>
+  <style>
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  </style>
+</head>
 <body>
 <?php
 // define variables and set to empty values
@@ -51,6 +65,6 @@ echo $gender;
 
 ?>
 <br>
-<a type="button" href="https://litandchill.github.io/" class = ".btn-success" roll="button">Return Home</a>
+<a type="button" href="https://litandchill.github.io/" class = ".button" roll="button">Return Home</a>
 </body>
 </html>
