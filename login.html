@@ -5,9 +5,9 @@
 <body>
   <form name="loginform" onSubmit="return validateForm();" method="post">
       <label>User name</label>
-      <input type="text" name="usr" placeholder="username">
+      <input type="text" name="userid" placeholder="username">
       <label>Password</label>
-      <input type="password" name="pword" placeholder="password">
+      <input type="password" name="passid" placeholder="password">
       <input type="submit" value="Login" onSubmit="validateForm();" />
   </form>
   <p><br><br>Don't have an Account yet?</p>
@@ -17,12 +17,12 @@
 
   <script>
       function validateForm() {
-          var un = document.loginform.usr.value;
-          var pw = document.loginform.pword.value;
+          var un = document.loginform.userid.value;
+          var pw = document.loginform.passid.value;
           var username = "username";
           var password = "password";
           if ((un == username) && (pw == password)) {
-              window.location = "main.html";
+              window.location = "productivity.html";
               return false;
           }
           else {

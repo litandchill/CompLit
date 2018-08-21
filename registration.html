@@ -1,37 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+                              /* h1 {
+                            margin-left: 70px;
+                            }
+                            form li {
+                            list-style: none;
+                            margin-bottom: 5px;
+                            }
+
+                            form ul li label{
+                            float: left;
+                            clear: left;
+                            width: 100px;
+                            text-align: right;
+                            margin-right: 10px;
+                            font-family:Verdana, Arial, Helvetica, sans-serif;
+                            font-size:14px;
+                            }
+
+                            form ul li input, select, span {
+                            float: left;
+                            margin-bottom: 10px;
+                            }
+
+                            form textarea {
+                            float: left;
+                            width: 350px;
+                            height: 150px;
+                            }
+
+                            [type="submit"] {
+                            clear: left;
+                            margin: 20px 0 0 230px;
+                            font-size:18px
+                            }
+
+                            p {
+                            margin-left: 70px;
+                            font-weight: bold;
+                            } */
+</style>
 
 </head>
 <body>
-<h1>Registration Form</h1>
-Use tab keys to move from one input field to the next.
-<form name='registration' onsubmit="validateForm();">
-<ul>
-<li><label for="userid">User Name:</label></li>
-<li><input type="text" name="userid" size="12" /></li>
-<li><label for="passid">Password:</label></li>
-<li><input type="password" name="passid" size="12" /></li>
-<li><label for="username">Name:</label></li>
-<li><input type="text" name="username" size="50" /></li>
 
+<form action="http://localhost:8080/user_data.php" method="POST">
 
-<li><label for="email">Email:</label></li>
-<li><input type="text" name="email" size="50" /></li>
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-<li><label>Language:</label></li>
-<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
-<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
-<li><label for="desc">About:</label></li>
-<li><textarea name="desc" id="desc"></textarea></li>
-<li><input type="submit" name="submit" value="Submit" /><a href="productivity.html"></a></li>
-</ul>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    Gender:
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";? value="female">Female
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";? value="male">Male
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";? value="bunny">Bunny
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
 </form>
 
+                          <!-- <form name='registration' action="test.hta" onsubmit="validateForm();">
+                          <ul>
+                          <li><label for="userid">User Name:</label></li>
+                          <li><input type="text" name="userid" size="12" /></li>
+                          <li><label for="passid">Password:</label></li>
+                          <li><input type="password" name="passid" size="12" /></li>
+                          <li><label for="name">Name:</label></li>
+                          <li><input type="text" name="username" size="50" /></li>
+
+
+                          <li><label for="email">Email:</label></li>
+                          <li><input type="text" name="email" size="50" /></li>
+
+                          <li><label>Language:</label></li>
+                          <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+                          <li><input type="checkbox" name="noen" value="noen" /><span>Non English</span></li>
+                          <li><label for="desc">About:</label></li>
+                          <li><textarea name="desc" id="desc"></textarea></li>
+                          <li><input type="submit" name="submit" value="Submit" onclick="WriteToFile()" /><a href="productivity.html"></a></li>
+                          </ul>
+                          </form> -->
+
 <script>
+                          // function WriteToFile(){
+                          //   try {
+                          //   var fso, s;
+                          //   fso = new ActiveXObject("Scripting.FileSystemObject");
+                          //   s = fso.OpenTextFile("user_data.txt" , 8, 1, -2);
+                          //   s.writeline("userid, passid, name, email, book, book, book, book, book, book, book, book, book, book");
+                          //   s.writeline(document.registration.userid.value + ", " +  document.registration.passid.value + ", " + document.registration.name.value + ", " +  document.registration.email.value);
+                          //   s.Close();
+                          // }
+                          // catch(err){
+                          //  var strErr = 'Error:';
+                          //  strErr += '\nNumber:' + err.number;
+                          //  strErr += '\nDescription:' + err.description;
+                          //  document.write(strErr);
+                          // }
+                          // }
+                          // }
+</script>
+
+<!-- <script>
     function validateForm() {
-        var un = document.loginform.usr.value;
-        var pw = document.loginform.pword.value;
+        var un = document.loginform.userid.value;
+        var pw = document.loginform.passid.value;
         var username = "username";
         var password = "password";
         if ((un == username) && (pw == password)) {
@@ -42,7 +195,10 @@ Use tab keys to move from one input field to the next.
             alert ("Login was unsuccessful, please check your username and password");
         }
       }
-</script>
+</script> -->
 
 </body>
 </html>
+
+
+ <!-- + ", " + document.registration.book.value -->
