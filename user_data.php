@@ -50,6 +50,7 @@ echo $gender;
 
 
 ?>
-<button src="index.html"><br>Back to Home</button>
+<br>
+<a href="index.html" class="button">Return Home</a>
 </body>
 </html>
