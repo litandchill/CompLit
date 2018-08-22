@@ -38,5 +38,5 @@ body, html {
   text-align: center;
   text-decoration: none;
   text-shadow:none;
-  display: block;
+  display: inline-block;
   font-size: 14px;
