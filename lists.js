@@ -57,7 +57,7 @@ var googleBooksKey = config.GOOGLE_BOOKS_KEY;
                   title=$('<h5>'+response.items[i].volumeInfo.title + '</h5>');
                   author=$('<h5>'+response.items[i].volumeInfo.authors + '</h5>');
 
-                  img=$('<img><a href=' + response.items[i].volumeInfo.infoLink  + "><button width='100%' text-align='center' display='block'>Read More</button></a>");
+                  img=$('<img><a href=' + response.items[i].volumeInfo.infoLink + "><br><button width='100%' text-align='center' display='block'>Read More</button></a>");
 
                   url=response.items[i].volumeInfo.imageLinks.thumbnail;
                   review=$('<h5>' + response.items[i].volumeInfo.description + '</h5>');
