@@ -227,6 +227,7 @@ nav li:nth-child(2n+1) a:after {
 
 .services a {
   padding: 25px;
+  padding-right: 350px;
   background: #fafafa;
   margin-top: 20px;
   border-radius: 4px;
